@@ -1,0 +1,28 @@
+*
+{ 
+	margin:0;
+	padding:0;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(signupimage.jpg);
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+}
+.container-signup{
+	border-radius:20px;
+	width:550px;
+	margin-left:auto;
+	margin-right:auto;
+	top:30%;
+	position:fixed;
+	left:28%;
+	color:white;
+}
+
+	
+
+
+
+
+

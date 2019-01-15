@@ -1,0 +1,21 @@
+﻿{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+<link href ="/static/designsignup.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    </header>
+<div class="container-signup">
+<h1>Signup</h1>
+ <form class="signup-form" method="POST" action="">
+	{% csrf_token %}
+	{{form.as_table}}
+	 <button type="submit">Sign up</button>
+ </form>
+</div>
+
+</body>
+</html>

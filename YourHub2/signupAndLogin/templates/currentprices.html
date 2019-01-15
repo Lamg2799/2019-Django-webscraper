@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Current Prices</title>
+		<link href ="/static/currentprices.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+	<header>
+<div class="navbar">
+  		<a href="#">About</a>
+  		<a href="#">FAQ</a>
+  		<div class="dropdown">
+   	 	<button class="dropbtn">{{request.user.username}}</button>
+    		<div class="dropdown-content">
+     	 	<a href='/logout/'>Logout</a>
+    		</div>
+  		</div> 
+		</div>
+	</header>
+		<div class="page-container">
+		{% for i in items  %}
+			{% if i.Itemuser == request.user %}
+			<button class="item-button" type='submit' value={{i.Item}} > {{i.Item}}</button>
+			{% endif %}
+		{% endfor %}
+		</div>
+
+		
+	</body>
+</html>
+
+		
+			
+	

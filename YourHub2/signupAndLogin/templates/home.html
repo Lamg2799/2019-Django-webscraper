@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage</title>
+<link href ="/static/homedesign.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h1 class="fade-in">Welcome back {{request.user.username}}!</h1>
+
+
+<div class="navbar">
+  <a href="#">About</a>
+  <a href="#">FAQ</a>
+  <div class="dropdown">
+    <button class="dropbtn">{{request.user.username}}</button>
+    <div class="dropdown-content">
+      <a href='/logout/'>Logout</a>
+    </div>
+  </div> 
+</div>
+
+<table class="navbuttontable">
+  <tr>
+	<td>
+	        <a href="/newitem/" class="navbut1" type="button">New Item</a>
+	</td>
+	<td>
+  	       <a href="/currentprices/" class="navbut1" type="button">Current Prices</a>
+	</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+

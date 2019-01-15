@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Add New Item</title>
+<link href ="/static/newitem.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+</header>
+
+<div class="new-item">
+	<form method="post" name="form">
+	{% csrf_token %}
+	<h1>Enter Item Below</h1>
+	        <input type="text" name="new-item-input" placeholder="Enter Item" autocomplete="new-password">
+	        <input type="submit" value="Submit" style="position:relative; top: 75px; left: -170px;">
+	       </form> </div>
+
+	<div class="navbar">
+  	<a href="#">About</a>
+  	<a href="#">FAQ</a>
+  	<div class="dropdown">
+   	 <button class="dropbtn">{{request.user.username}}</button>
+    	<div class="dropdown-content">
+     	 <a href='/logout/'>Logout</a>
+    	</div>
+  	</div> 
+	</div>
+</body>
+</html>
